@@ -1,6 +1,5 @@
 import java.util.*;
 
-import java.util.*;
 import javax.swing.*;
 
 import java.awt.*;
@@ -150,6 +149,32 @@ public class BasicStats {
       }
 
       return mode;
+    }
+
+    /**
+     * Compute the minimum of an array of numbers.
+     */
+    public static double minimum(double ... numbers) {
+      ArrayList <Double> ArrayNum = new ArrayList<>();
+      for(Double num:numbers)
+      {
+        ArrayNum.add(num);
+      }
+      double mnm =  MinMaxCalculation.getMin(ArrayNum);
+      return mnm;
+    }
+
+    /**
+     * Compute the maximum of an array of numbers.
+     */
+    public static double maximum(double ... numbers) {
+      ArrayList <Double> ArrayNum = new ArrayList<>();
+      for(Double num:numbers)
+      {
+        ArrayNum.add(num);
+      }
+      double mxm =  MinMaxCalculation.getMax(ArrayNum);
+      return mxm;
     }
 
     //Helper method
